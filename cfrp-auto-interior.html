@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site.title">和野贸易（广州）有限公司 - 基于复合材料的产品轻量化方案提供商</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        .product-item {
+            background: var(--bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .product-item:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+        .product-img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            display: block;
+        }
+        .product-info {
+            padding: 20px 24px;
+        }
+        .product-info h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+        .product-info p {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        @media (max-width: 900px) {
+            .product-gallery {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+        @media (max-width: 580px) {
+            .product-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⬡</span>
+                <span class="logo-text">和野贸易</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav.home">首页</a></li>
+                    <li><a href="index.html#about" class="nav-link" data-i18n="nav.about">关于我们</a></li>
+                    <li><a href="index.html#services" class="nav-link active" data-i18n="nav.services">服务</a></li>
+                    <li><a href="index.html#team" class="nav-link" data-i18n="nav.team">客户及合作伙伴</a></li>
+                    <li><a href="index.html#cases" class="nav-link" data-i18n="nav.cases">案例</a></li>
+                    <li><a href="index.html#contact" class="nav-link" data-i18n="nav.contact">联系我们</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-hero" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 80px 0 50px; text-align: center; color: #fff;">
+        <div class="container">
+            <p class="section-tag" style="color: var(--primary-light);">CFRP AUTO INTERIOR</p>
+            <h1 style="font-size: 2.4rem; font-weight: 700;" data-i18n="interior.title">碳纤维制品-汽车内饰件</h1>
+            <p style="font-size: 1.05rem; color: #9aa0a6; margin-top: 12px;" data-i18n="interior.subtitle">轻量化 · 高质感 · 定制化</p>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section class="section" style="padding: 60px 0 80px;">
+        <div class="container">
+            <div class="product-gallery">
+                <!-- 1. 车门开关面板 -->
+                <div class="product-item">
+                    <img src="images/interior-door-switch.png" alt="车门开关面板" class="product-img">
+                    <div class="product-info">
+                        <h4 data-i18n="interior.product1">车门开关面板</h4>
+                        <p data-i18n="interior.p1">碳纤维车门开关面板，采用热压罐成型工艺，表面光滑平整，碳纤维纹理清晰可见，为车内增添运动气息。</p>
+                    </div>
+                </div>
+                <!-- 2. 碳纤维方向盘 -->
+                <div class="product-item">
+                    <img src="images/interior-steering-wheel.png" alt="碳纤维方向盘" class="product-img">
+                    <div class="product-info">
+                        <h4 data-i18n="interior.product2">碳纤维方向盘</h4>
+                        <p data-i18n="interior.p2">全碳纤维材质运动方向盘，人体工学设计，握感舒适，大幅减轻方向盘重量，提升转向响应灵敏度。</p>
+                    </div>
+                </div>
+                <!-- 3. 手动拨档杆 -->
+                <div class="product-item">
+                    <img src="images/interior-gear-shift.png" alt="手动拨档杆" class="product-img">
+                    <div class="product-info">
+                        <h4 data-i18n="interior.product3">手动拨档杆</h4>
+                        <p data-i18n="interior.p3">碳纤维纹理手动换挡头，精密CNC加工，表面防滑处理，手感出众，为驾驶增添操控乐趣。</p>
+                    </div>
+                </div>
+                <!-- 4. 车门装饰件 -->
+                <div class="product-item">
+                    <img src="images/interior-door-trim.png" alt="车门装饰件" class="product-img">
+                    <div class="product-info">
+                        <h4 data-i18n="interior.product4">车门装饰件</h4>
+                        <p data-i18n="interior.p4">车门饰条与门板碳纤维嵌件，精准贴合原车曲线，提升内饰质感，彰显不凡品味。</p>
+                    </div>
+                </div>
+                <!-- 5. 赛车座椅 -->
+                <div class="product-item">
+                    <img src="images/interior-racing-seat.png" alt="赛车座椅" class="product-img">
+                    <div class="product-info">
+                        <h4 data-i18n="interior.product5">赛车座椅</h4>
+                        <p data-i18n="interior.p5">一体式全碳纤维赛车桶椅，极致轻量化设计，优异包裹性与支撑性，赛道与街道兼宜。</p>
+                    </div>
+                </div>
+                <!-- 6. 中控台面板 -->
+                <div class="product-item">
+                    <img src="images/interior-center-console.png" alt="中控台面板" class="product-img">
+                    <div class="product-info">
+                        <h4 data-i18n="interior.product6">中控台面板</h4>
+                        <p data-i18n="interior.p6">中控区域碳纤维覆盖件，精密切割完美贴合，保护原车内饰的同时提升视觉层次感。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">和野贸易</span>
+                    </a>
+                    <p data-i18n="footer.brand">创新驱动未来，科技成就梦想。<br>我们期待与您携手共进。</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quick">快速链接</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+                        <li><a href="index.html#about" data-i18n="nav.about">关于我们</a></li>
+                        <li><a href="index.html#services" data-i18n="nav.services">服务</a></li>
+                        <li><a href="index.html#team" data-i18n="nav.team">客户及合作伙伴</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.service">服务项目</h4>
+                    <ul>
+                        <li><a href="cfrp-products.html" data-i18n="services.card1.title">碳纤维制品-汽车外饰件</a></li>
+                        <li><a href="cfrp-auto-interior.html" data-i18n="services.card2.title">碳纤维制品-汽车内饰件</a></li>
+                        <li><a href="cfrp-odm.html" data-i18n="services.card3.title">产品开发ODM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-i18n="footer.follow">关注我们</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="微信">💬</a>
+                        <a href="#" class="social-icon" title="微博">📢</a>
+                        <a href="#" class="social-icon" title="LinkedIn">🔗</a>
+                        <a href="#" class="social-icon" title="GitHub">💻</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copy">&copy; 2024 和野贸易（广州）有限公司 HeYe Trading (Guangzhou) Co., Ltd. All Rights Reserved. | 粤ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
+</body>
+</html>
