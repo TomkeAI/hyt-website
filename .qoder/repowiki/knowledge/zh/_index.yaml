@@ -1,0 +1,63 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: main
+exported_at: "2026-06-15T01:12:04Z"
+modules:
+    "":
+        dir_name: 和野贸易企业官网与多语言交互系统
+        title: 和野贸易企业官网与多语言交互系统
+        scope:
+            - .gitignore
+            - HYT website.code-workspace
+            - index.html
+            - cfrp-products.html
+            - cfrp-auto-exterior.html
+            - cfrp-auto-interior.html
+            - cfrp-odm.html
+            - css/
+            - js/
+            - .codebuddy\integration\cloudStudio.json
+            - .codebuddy\sandbox\sandbox.json
+            - css\style.css
+            - images\cfrp-products.png
+            - images\industry-drone.png
+            - images\industry-medical.png
+            - images\industry-racing.png
+            - images\industry-train.png
+            - images\interior-center-console.png
+            - images\interior-door-switch.png
+            - images\interior-door-trim.png
+            - images\interior-gear-shift.png
+            - images\interior-racing-seat.png
+            - images\interior-steering-wheel.png
+            - images\logo-1.png
+            - images\logo-2.png
+            - images\logo-3.png
+            - images\logo-4.png
+            - images\logo-5.png
+            - images\logo-6.png
+            - images\logo-7.png
+            - images\logo-8.png
+            - images\logo-9.png
+            - images\产品开发周期流程图.png
+            - images\产品开发流程图.png
+            - images\医疗.png
+            - images\工艺流程图.png
+            - images\无人机.png
+            - images\赛车.png
+            - images\高铁.png
+            - js\lang.js
+            - js\script.js
+            - screenshot-bottom-flowcharts.png
+            - screenshot-odm-bottom-final.png
+            - screenshot-odm-bottom.png
+            - screenshot-odm-flowchart-bottom.png
+            - screenshot-odm-flowchart-top.png
+            - screenshot-odm-top-final.png
+            - screenshot-odm-top.png
+            - screenshot-top-flowcharts.png
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []

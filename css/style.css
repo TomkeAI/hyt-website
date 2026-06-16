@@ -8,21 +8,21 @@
 }
 
 :root {
-    --primary: #1a73e8;
-    --primary-dark: #1557b0;
-    --primary-light: #e8f0fe;
-    --secondary: #34a853;
-    --accent: #fbbc04;
-    --danger: #ea4335;
-    --text: #202124;
-    --text-secondary: #5f6368;
-    --text-light: #9aa0a6;
-    --bg: #ffffff;
-    --bg-alt: #f8f9fa;
-    --bg-dark: #1a1a2e;
-    --border: #e0e0e0;
-    --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --primary: #7c9a92;
+    --primary-dark: #5d7e75;
+    --primary-light: #edf3f1;
+    --secondary: #c4a35a;
+    --accent: #d4a853;
+    --danger: #c0706b;
+    --text: #3a3a3a;
+    --text-secondary: #6b6b6b;
+    --text-light: #a0a0a0;
+    --bg: #faf8f5;
+    --bg-alt: #f2ede7;
+    --bg-dark: #3d3d3d;
+    --border: #e5ddd4;
+    --shadow: 0 2px 12px rgba(120, 100, 80, 0.07);
+    --shadow-lg: 0 8px 30px rgba(120, 100, 80, 0.10);
     --radius: 12px;
     --radius-sm: 8px;
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,8 +76,8 @@ img {
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(250, 248, 245, 0.95);
+    backdrop-filter: blur(12px);
     box-shadow: var(--shadow);
     padding: 10px 0;
 }
@@ -198,7 +198,7 @@ img {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+    background: linear-gradient(135deg, #5d7e75 0%, #7c9a92 40%, #a8c5bb 70%, #d4c5a0 100%);
 }
 
 .hero-bg {
@@ -214,7 +214,7 @@ img {
 
 .particle {
     position: absolute;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.10);
     border-radius: 50%;
     animation: floatUp linear infinite;
 }
@@ -258,7 +258,7 @@ img {
 .hero-subtitle {
     font-size: 14px;
     letter-spacing: 4px;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: 16px;
     text-transform: uppercase;
 }
@@ -272,15 +272,16 @@ img {
 }
 
 .hero-title .highlight {
-    background: linear-gradient(135deg, var(--primary), #64b5f6);
+    background: linear-gradient(135deg, #f0e6cc, #d4a853);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    white-space: nowrap;
 }
 
 .hero-desc {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 40px;
     line-height: 1.8;
 }
@@ -309,23 +310,23 @@ img {
 .btn-primary {
     background: var(--primary);
     color: #fff;
-    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.4);
+    box-shadow: 0 4px 15px rgba(124, 154, 146, 0.35);
 }
 
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(26, 115, 232, 0.5);
+    box-shadow: 0 6px 20px rgba(124, 154, 146, 0.45);
 }
 
 .btn-outline {
     background: transparent;
     color: #fff;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.35);
 }
 
 .btn-outline:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.12);
     border-color: #fff;
     transform: translateY(-2px);
 }
@@ -495,6 +496,12 @@ img {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.services-grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .service-card {
     background: var(--bg);
     border-radius: var(--radius);
@@ -657,8 +664,8 @@ img {
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    display: flex;
+    justify-content: center;
     gap: 48px;
     align-items: start;
 }
@@ -750,21 +757,22 @@ img {
 
 /* ==================== 页脚 ==================== */
 .footer {
-    background: var(--bg-dark);
-    color: rgba(255, 255, 255, 0.7);
+    background: var(--bg);
+    color: var(--text-secondary);
     padding: 60px 0 0;
+    border-top: 1px solid var(--border);
 }
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
     gap: 40px;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--border);
 }
 
 .footer-brand .logo-text {
-    color: #fff;
+    color: var(--text);
 }
 
 .footer-brand p {
@@ -775,7 +783,7 @@ img {
 
 .footer-links h4,
 .footer-social h4 {
-    color: #fff;
+    color: var(--text);
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 16px;
@@ -789,12 +797,12 @@ img {
 
 .footer-links a {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-secondary);
     transition: var(--transition);
 }
 
 .footer-links a:hover {
-    color: #fff;
+    color: var(--primary);
 }
 
 .social-icons {
@@ -808,14 +816,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--primary-light);
     border-radius: 50%;
     font-size: 18px;
+    color: var(--primary);
     transition: var(--transition);
 }
 
 .social-icon:hover {
     background: var(--primary);
+    color: #fff;
     transform: translateY(-2px);
 }
 
@@ -823,12 +833,12 @@ img {
     padding: 24px 0;
     text-align: center;
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--text-light);
 }
 
 /* ==================== ODM页面 ==================== */
 .page-hero {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+    background: linear-gradient(135deg, #5d7e75, #7c9a92, #a8c5bb);
     color: #fff;
     padding: 80px 0 50px;
     text-align: center;
@@ -865,6 +875,63 @@ img {
     padding-bottom: 12px;
     border-bottom: 3px solid var(--primary);
     display: inline-block;
+}
+
+/* ==================== 设备展示 ==================== */
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.equipment-card {
+    background: var(--bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.equipment-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-light);
+}
+
+.equipment-img {
+    margin-bottom: 16px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: var(--bg-alt);
+}
+
+.equipment-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.equipment-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.equipment-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .odm-image-placeholder {
@@ -951,7 +1018,8 @@ img {
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-grid {
@@ -1032,4 +1100,311 @@ img {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+/* ==================== 交互式流程图 ==================== */
+.flow-hint {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+/* ===== 流程图1: 产品开发流程（灰圆 + 蓝箭头 + 绿箭头 + 详情白框） ===== */
+.flow1-wrap {
+    overflow-x: auto;
+    padding: 30px 0 40px;
+}
+.flow1-row {
+    display: flex;
+    align-items: flex-start;
+    min-width: max-content;
+    padding: 0 20px;
+    position: relative;
+}
+/* 每个阶段列 */
+.flow1-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 140px;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.15s;
+}
+.flow1-stage:active { cursor: grabbing; }
+.flow1-stage.dragging { opacity: 0.35; transform: scale(0.95); }
+.flow1-stage.drag-over .flow1-circle { box-shadow: 0 0 0 3px var(--secondary); }
+
+/* 灰色圆形 */
+.flow1-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #d5d5d5;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 12px;
+    transition: background 0.2s, box-shadow 0.2s;
+    position: relative;
+    z-index: 2;
+}
+.flow1-stage:hover .flow1-circle { background: #c8c8c8; }
+.flow1-stage.active .flow1-circle {
+    background: #b0b0b0;
+    box-shadow: 0 0 0 3px var(--secondary);
+}
+
+/* 蓝色右箭头（圆之间） */
+.flow1-barrow {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 38px; /* 对齐圆形垂直中心 */
+    width: 36px;
+}
+.flow1-barrow svg { width: 28px; height: 14px; }
+
+/* 绿色下箭头 */
+.flow1-garrow {
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+}
+.flow1-garrow svg { width: 14px; height: 24px; }
+
+/* 详情白框（始终可见） */
+.flow1-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px 14px;
+    width: 140px;
+    margin-top: 2px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.flow1-stage.active .flow1-box {
+    border-color: var(--secondary);
+    box-shadow: 0 2px 10px rgba(196,163,90,0.2);
+}
+.flow1-box-item {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.7;
+    padding-left: 12px;
+    position: relative;
+}
+.flow1-box-item::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #888;
+}
+
+/* ===== 流程图2: 产品开发周期（彩色箭头块） ===== */
+.flow2-wrap {
+    overflow-x: auto;
+    padding: 30px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flow2-row {
+    display: flex;
+    align-items: stretch;
+    min-width: max-content;
+    padding: 0 20px;
+    justify-content: center;
+}
+.flow2-step {
+    flex-shrink: 0;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.15s;
+    position: relative;
+}
+.flow2-step:active { cursor: grabbing; }
+.flow2-step.dragging { opacity: 0.35; transform: scale(0.95); }
+.flow2-step.drag-over { transform: scale(1.06); }
+
+.flow2-chev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 32px 20px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    /* 箭头形状：右侧尖，左侧凹 */
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%, 18px 50%);
+    min-width: 170px;
+    transition: filter 0.2s, transform 0.2s;
+    position: relative;
+}
+.flow2-step:first-child .flow2-chev {
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%);
+    padding-left: 16px;
+}
+.flow2-step:hover .flow2-chev { filter: brightness(0.92); }
+.flow2-step.active .flow2-chev { box-shadow: inset 0 0 0 3px rgba(0,0,0,0.15); }
+
+/* 精确匹配原图配色 */
+.flow2-chev.c1 { background: #B8A0D2; color: #fff; }
+.flow2-chev.c2 { background: #E8D4C4; color: #666; }
+.flow2-chev.c3 { background: #7AC943; color: #fff; }
+.flow2-chev.c4 { background: #7B83D9; color: #fff; }
+.flow2-chev.c5 { background: #8C8C8C; color: #fff; }
+
+/* 括号 + 说明 */
+.flow2-bracket-area {
+    min-width: max-content;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+.flow2-bracket-row {
+    display: flex;
+    margin-top: 16px;
+    padding-left: 170px; /* 跳过第一个chev */
+}
+.flow2-bracket-line {
+    width: calc((170px * 3) + (32px * 3));
+    height: 28px;
+    border-left: 2px solid #888;
+    border-right: 2px solid #888;
+    border-bottom: 2px solid #888;
+    border-radius: 0 0 6px 6px;
+    position: relative;
+}
+.flow2-bracket-line::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 2px;
+    height: 8px;
+    background: #888;
+    transform: translateX(-50%);
+}
+.flow2-note {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* ===== 流程图3: 工艺流程（双行 + 中间栏 + 反馈弧线） ===== */
+.flow3-wrap {
+    overflow-x: auto;
+    padding: 20px 0 40px;
+    display: flex;
+    justify-content: center;
+}
+.flow3-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: max-content;
+    padding: 0 20px;
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* 行 */
+.flow3-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.flow3-line + .flow3-line { margin-top: 20px; }
+
+/* 节点（浅灰圆角矩形） */
+.flow3-node {
+    flex-shrink: 0;
+    background: #e8e8e8;
+    border: none;
+    border-radius: 8px;
+    padding: 20px 32px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    cursor: grab;
+    user-select: none;
+    white-space: nowrap;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    position: relative;
+    z-index: 2;
+}
+.flow3-node:active { cursor: grabbing; }
+.flow3-node:hover { background: #ddd; }
+.flow3-node.active {
+    background: #d0d0d0;
+    box-shadow: 0 0 0 3px var(--secondary);
+}
+.flow3-node.dragging { opacity: 0.35; transform: scale(0.95); }
+.flow3-node.drag-over { box-shadow: 0 0 0 3px var(--secondary); }
+
+/* 深蓝右箭头 */
+.flow3-darrow {
+    flex-shrink: 0;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flow3-darrow svg { width: 40px; height: 22px; }
+
+/* 中间深色栏 */
+.flow3-center {
+    background: #505050;
+    color: #fff;
+    padding: 20px 52px;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 16px 0;
+    max-width: 700px;
+    cursor: grab;
+    user-select: none;
+    transition: background 0.2s;
+}
+.flow3-center:hover { background: #444; }
+.flow3-center.dragging { opacity: 0.35; }
+
+/* 反馈标注 */
+.flow3-fb-label {
+    font-size: 11px;
+    color: #2a4a7a;
+    font-weight: 500;
+}
+
+/* --- 流程图响应式 --- */
+@media (max-width: 768px) {
+    .flow1-stage { width: 110px; }
+    .flow1-circle { width: 90px; height: 90px; font-size: 11px; padding: 8px; }
+    .flow1-barrow { padding-top: 30px; width: 24px; }
+    .flow1-box { width: 110px; padding: 8px 10px; }
+    .flow1-box-item { font-size: 11px; }
+
+    .flow2-chev { padding: 16px 24px 16px 14px; font-size: 13px; min-width: 130px; }
+    .flow2-step:first-child .flow2-chev { padding-left: 12px; }
+
+    .flow3-node { padding: 12px 20px; font-size: 14px; }
+    .flow3-center { padding: 16px 32px; font-size: 15px; max-width: 90vw; }
+    .flow3-darrow { width: 30px; }
+    .flow3-darrow svg { width: 24px; height: 14px; }
 }
