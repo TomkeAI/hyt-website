@@ -18,7 +18,7 @@ const I18N = {
             'lang.switch': 'English',
 
             // 首页 Hero
-            'hero.subtitle': 'Wonster TECHNICAL AUTOMOTIVE SERVICE (GUANGZHOU) CO., LTD.',
+            'hero.subtitle': 'Wonster AUTOMOTIVE TECHNICAL SERVICE (GUANGZHOU) CO., LTD.',
             'hero.title': '基于复合材料的产品<span class="highlight">轻量化</span>方案提供商',
             'hero.desc': '专注于碳纤维、玻璃纤维等先进复合材料应用，<br>为汽车、航空航天、交通轨道、医疗器械等行业提供轻量化整体解决方案',
             'hero.btn1': '了解我们的服务',
@@ -75,7 +75,7 @@ const I18N = {
             'contact.addr': '公司地址',
             'contact.addr.val': '广州市番禺区大龙街汉碁大道3号2栋211',
             'contact.email': '电子邮箱',
-            'contact.email.val': 'wonster_marketing@wtas.co.in',
+            'contact.email.val': 'wonster_marketing@wtas.tech',
             'contact.phone': '联系电话',
             'contact.phone.val': '+86 139 2243 0956',
             'contact.hours': '工作时间',
@@ -95,7 +95,7 @@ const I18N = {
             'footer.quick': '快速链接',
             'footer.service': '服务项目',
             'footer.follow': '关注我们',
-            'footer.copy': '© 2024 广州旺斯特汽车技术服务有限公司 Wonster TECHNICAL AUTOMOTIVE SERVICE (GUANGZHOU) CO., LTD. All Rights Reserved.',
+            'footer.copy': '© 2024 广州旺斯特汽车技术服务有限公司 Wonster Automotive Technical Service (Guangzhou) Co., Ltd. All Rights Reserved.',
 
             // 内饰页
             'interior.title': '碳纤维制品-汽车内饰件',
@@ -203,7 +203,7 @@ const I18N = {
             'lang.switch': '中文',
 
             // ホーム Hero
-            'hero.subtitle': 'Wonster TECHNICAL AUTOMOTIVE SERVICE (GUANGZHOU) CO., LTD.',
+            'hero.subtitle': 'Wonster AUTOMOTIVE TECHNICAL SERVICE (GUANGZHOU) CO., LTD.',
             'hero.title': '複合材料による製品<span class="highlight">軽量化</span>ソリューションプロバイダー',
             'hero.desc': '炭素繊維、ガラス繊維などの先進複合材料の応用に特化し、<br>自動車、航空宇宙、交通軌道、医療機器などの業界に軽量化トータルソリューションを提供',
             'hero.btn1': 'サービスを見る',
@@ -214,8 +214,8 @@ const I18N = {
             'about.title': '広州ワンスター',
             'about.desc': '高品質・合理的なコスト・タイムリーな納期で、お客様から信頼される企業を目指して',
             'about.h3': '軽量化が価値を創造し、革新が業界を変革する',
-            'about.p1': '広州ワンスターは2020年CFRP/GFRP事業を始め、2022年4月正式に会社を立ち上げました。当社は主にオートクレーブ成形、PCM・SMC成形などの成熟した炭素繊維成形技術を活用し、軽量化ソリューションに基づくドライカーボン製品をお客様に提供しています。',
-            'about.p2': '創業以来、サイドパネル、リアスポイラー、リアウィングステーなどのエアロパーツとエンジンカバーなど数多いドライカーボン製品を出荷しています。「高品質・合理な価格・タイムリーな納期」を長期発展戦略とし、優れた品質と洗練されたデザインで、多くのお客様から高い評価を受けています。より速く、より効率的に、お客様のあらゆるご要望に100％お応えすることは、当社の使命であり、競争の激しい世界で長く生き残るための価値でもございます。明るい未来に向かって、常に精進し、お客様から信頼される企業を目指して技術と品質を磨き続け、価値ある製品・サービスを提供し続けます。',
+            'about.p1': '広州ワンスターは2020年4月よりCFRP/GFRP製品事業を正式に開始し、2022年4月に会社を設立しました。当社は主にオートクレーブ成形、プレス成形などの成熟した炭素繊維成形技術を活用し、軽量化ソリューションに基づくドライカーボン製品をお客様に提供しています。',
+            'about.p2': '会社設立され以来、サイドパネル、リアスポイラー、リアウィングステーなどのエアロパーツとエンジンカバーなど数多いカーボン製可飾品製品を出荷しています。「高品質・高コストパフォーマンス」を長期戦略方針とし、優れた品質と洗練されたデザインで、多くのお客様から高い評価をいただいています。より速く、より効率的に、お客様のあらゆるご要望に100％お応えすることが、当社の使命であり、競争の激しい世界で長く生き残るための価値でもございます。明るい未来に向かって、常に精進し、お客様から信頼される企業を目指して技術と品質を磨き続け、価値ある製品・サービスを提供し続けます。',
             'about.industry1': 'ドローン',
             'about.industry2': 'モータースポーツ',
             'about.industry3': '高速鉄道',
@@ -260,7 +260,7 @@ const I18N = {
             'contact.addr': '会社住所',
             'contact.addr.val': '広州市番禺区大龍街漢碁大道3号2棟211',
             'contact.email': 'メールアドレス',
-            'contact.email.val': 'wonster_marketing@wtas.co.in',
+            'contact.email.val': 'wonster_marketing@wtas.tech',
             'contact.phone': '電話番号',
             'contact.phone.val': '+86 139 2243 0956',
             'contact.hours': '営業時間',
@@ -280,7 +280,7 @@ const I18N = {
             'footer.quick': 'クイックリンク',
             'footer.service': 'サービス項目',
             'footer.follow': 'フォローする',
-            'footer.copy': '© 2024 広州ワンスター Wonster TECHNICAL AUTOMOTIVE SERVICE (GUANGZHOU) CO., LTD. All Rights Reserved.',
+            'footer.copy': '© 2024 広州ワンスター Wonster Automotive Technical Service (Guangzhou) Co., Ltd. All Rights Reserved.',
 
             // 内装ページ
             'interior.title': 'CFRP製品-自動車内装部品',
@@ -378,7 +378,7 @@ const I18N = {
 
         'en': {
             // General
-            'site.title': 'Wonster TECHNICAL AUTOMOTIVE SERVICE (GUANGZHOU) CO., LTD. - Lightweight Solutions Provider Based on Composite Materials',
+            'site.title': 'Wonster Automotive Technical Service (Guangzhou) Co., Ltd. - Lightweight Solutions Provider Based on Composite Materials',
             'nav.home': 'Home',
             'nav.about': 'About Us',
             'nav.services': 'Products',
@@ -399,7 +399,7 @@ const I18N = {
             'about.title': 'About Wtas',
             'about.desc': 'Committed to high quality and cost-effectiveness, striving to be a trusted enterprise',
             'about.h3': 'Lightweighting Creates Value, Innovation Drives Industry Transformation',
-            'about.p1': 'Wonster TECHNICAL AUTOMOTIVE SERVICE (GUANGZHOU) CO., LTD. officially launched its CFRP/GFRP product business in April 2022 and was formally established as a company in January 2025. The company primarily utilizes mature carbon fiber molding processes such as autoclave molding and compression molding to provide customers with dry carbon products based on lightweight solutions.',
+            'about.p1': 'Wonster Automotive Technical Service (Guangzhou) Co., Ltd. officially launched its CFRP/GFRP product business in April 2022 and was formally established as a company in January 2025. The company primarily utilizes mature carbon fiber molding processes such as autoclave molding and compression molding to provide customers with dry carbon products based on lightweight solutions.',
             'about.p2': 'With "high quality, high cost-effectiveness" as our long-term strategic approach, we have earned widespread recognition from customers for our outstanding quality and refined design. Faster, more efficient, and 100% meeting all reasonable customer needs is the mission and value we have always pursued. Looking towards a bright future, we will continue to strive to become a trusted enterprise for all our clients.',
             'about.industry1': 'Drones',
             'about.industry2': 'Racing',
@@ -445,7 +445,7 @@ const I18N = {
             'contact.addr': 'Address',
             'contact.addr.val': 'Building 2, Unit 211, No.3 Hanqi Avenue, Dalong Street, Panyu District, Guangzhou',
             'contact.email': 'Email',
-            'contact.email.val': 'wonster_marketing@wtas.co.in',
+            'contact.email.val': 'wonster_marketing@wtas.tech',
             'contact.phone': 'Phone',
             'contact.phone.val': '+86 139 2243 0956',
             'contact.hours': 'Business Hours',
@@ -465,7 +465,7 @@ const I18N = {
             'footer.quick': 'Quick Links',
             'footer.service': 'Services',
             'footer.follow': 'Follow Us',
-            'footer.copy': '© 2024 Wonster TECHNICAL AUTOMOTIVE SERVICE (GUANGZHOU) CO., LTD. All Rights Reserved.',
+            'footer.copy': '© 2024 Wonster Automotive Technical Service (Guangzhou) Co., Ltd. All Rights Reserved.',
 
             // Interior page
             'interior.title': 'CFRP Products - Automotive Interior',
